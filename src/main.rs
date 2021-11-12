@@ -1,16 +1,16 @@
 #![allow(dead_code)]
 
-use std::collections::hash_map::DefaultHasher;
 use std::collections::{HashMap, HashSet, VecDeque};
+use std::collections::hash_map::DefaultHasher;
 use std::convert::TryInto;
 use std::fmt::Debug;
 use std::fs;
 use std::hash::{Hash, Hasher};
 use std::iter::FromIterator;
+use std::ops::Range;
 use std::str::FromStr;
 
 use regex::Regex;
-use std::ops::Range;
 
 fn main() {
     assert_eq!(day_0(), 0);
